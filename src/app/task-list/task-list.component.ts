@@ -8,8 +8,9 @@ import { Component, Input } from '@angular/core';
 export class TaskListComponent {
   searchTest:any;
 @Input()tasks:any
+
 removetask(index:number){
-  this.tasks.splice(index ,1)
+  this.tasks.splice(index )
   localStorage.setItem ('mytask',JSON.stringify(this.tasks))
 
 }

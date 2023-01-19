@@ -9,9 +9,8 @@ export class AppComponent implements OnInit {
   title = 'My Task List';
   tasks:string[]=[]
   ngOnInit():void{
-    if(localStorage.getItem('mytask')){
-      // this.tasks=JSON.parse(localStorage.getItem('mytask'))
-    }
-  }
-
-}
+   if(  localStorage.getItem ('mytask')){
+  this.tasks=JSON.parse(localStorage.getItem('mytask')!)
+   }
+ 
+  }}

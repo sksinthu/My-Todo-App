@@ -10,7 +10,7 @@ export class TaskListComponent {
 @Input()tasks:any
 
 removetask(index:number){
-  this.tasks.splice(index )
+  this.tasks.splice(index,1 )
   localStorage.setItem ('mytask',JSON.stringify(this.tasks))
 
 }
